@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {createRoot} from 'react-dom/client';
-import {ArrowUpRight, Github, Instagram, Mail, ExternalLink, Menu, X} from 'lucide-react';
 import profile from './data/profile.json';
 import projects from './data/projects.json';
 import skills from './data/skills.json';
@@ -19,8 +18,8 @@ function Project({project,index}) {
     {project.intro && <p className="intro">{project.intro}</p>}
     <div className="tags">{project.technologies?.map(t=><span key={t}>{t}</span>)}</div>
     <div className="links">
-      {project.github && <a href={project.github} target="_blank" rel="noreferrer"><Github size={17}/> GitHub</a>}
-      {project.live && <a href={project.live} target="_blank" rel="noreferrer"><ExternalLink size={17}/> Live Demo</a>}
+      {project.github && <a href={project.github} target="_blank" rel="noreferrer">GitHub</a>}
+      {project.live && <a href={project.live} target="_blank" rel="noreferrer">Live Demo</a>}
     </div>
   </div>;
   return <article className={'project '+(index%2?'reverse':'')}>
@@ -37,14 +36,14 @@ function App(){
  const grouped=skills.reduce((a,s)=>{(a[s.category]??=[]).push(s);return a},{});
  return <div>
   <header><a className="brand" href="#top">SR<span>.</span></a>
-   <button className="menu" onClick={()=>setMenu(!menu)}>{menu?<X/>:<Menu/>}</button>
+   <button className="menu" onClick={()=>setMenu(!menu)}>{menu?'×':'☰'}</button>
    <nav className={menu?'show':''}>{['about','projects','skills','journey','contact'].map(x=><a key={x} href={'#'+x} onClick={()=>setMenu(false)}>{x}</a>)}</nav>
   </header>
   <main id="top">
    <section className="hero">
     <div className="hero-copy"><p className="eyebrow">SADARAM RAHUL · PORTFOLIO</p><h1>{profile.name}<br/><em>BACKEND</em><br/>DEVELOPER<span>.</span></h1>
       <p className="hero-text">{profile.intro}</p>
-      <div className="actions"><a className="primary" href="#projects">View projects <ArrowUpRight size={18}/></a><a className="secondary" href="#contact">Contact me</a></div>
+      <div className="actions"><a className="primary" href="#projects">View projects ↗</a><a className="secondary" href="#contact">Contact me</a></div>
     </div>
     <div className="portrait-wrap"><div className="portrait-frame"><div className="portrait-placeholder">SR</div></div><span className="portrait-note">BUILDING FROM<br/>THE LOGIC UP</span></div>
    </section>
@@ -53,9 +52,9 @@ function App(){
    <section id="skills" className="section skills-section"><div className="section-label">03 — TOOLKIT</div><div className="skill-grid">{Object.entries(grouped).map(([cat,items])=><div className="skill-group" key={cat}><h3>{cat}</h3>{items.map(s=><div className="skill" key={s.name}><span>{s.name}</span><small>{s.level||''}</small></div>)}</div>)}</div></section>
    {(experience.length||education.length||certifications.length||achievements.length)>0 && <section id="journey" className="section"><div className="section-label">04 — JOURNEY</div><div className="timeline">{[...experience.map(x=>({...x,type:'Experience'})),...education.map(x=>({...x,type:'Education'})),...certifications.map(x=>({...x,type:'Certification'})),...achievements.map(x=>({...x,type:'Achievement'}))].map((x,i)=><div className="timeline-item" key={i}><span>{x.type}</span><h3>{x.title||x.name}</h3><p>{x.company||x.institution||x.description||''}</p><small>{x.startDate||x.date||''} {x.endDate?'— '+x.endDate:''}</small></div>)}</div></section>}
    <section id="contact" className="contact section"><div className="section-label">05 — CONTACT</div><div><h2>Have an idea?<br/><span>Let's talk.</span></h2><p>For projects, collaborations, or just a good technical conversation.</p><div className="socials">
-    {socials.instagram&&<a href={socials.instagram} target="_blank" rel="noreferrer"><Instagram/> Instagram</a>}
-    {socials.github&&<a href={socials.github} target="_blank" rel="noreferrer"><Github/> GitHub</a>}
-    {socials.email&&<a href={'mailto:'+socials.email}><Mail/> {socials.email}</a>}
+    {socials.instagram&&<a href={socials.instagram} target="_blank" rel="noreferrer">Instagram</a>}
+    {socials.github&&<a href={socials.github} target="_blank" rel="noreferrer">GitHub</a>}
+    {socials.email&&<a href={'mailto:'+socials.email}>{socials.email}</a>}
    </div></div></section>
   </main>
   <footer><span>SADARAM RAHUL</span><span>BACKEND DEVELOPER · {new Date().getFullYear()}</span></footer>

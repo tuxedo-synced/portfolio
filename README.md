@@ -42,3 +42,6 @@ Add objects to `experience.json`, `education.json`, `certifications.json`, and `
 
 ## Deploy on Vercel
 Push this folder to GitHub, import the repository in Vercel, and deploy. Vercel will rebuild whenever you push changes.
+
+## Vercel note
+This version pins Vite and React to stable versions and includes the Vite React plugin to avoid the Vite 8/Rolldown build issue encountered on Vercel.
