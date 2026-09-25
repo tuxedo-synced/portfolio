@@ -155,6 +155,7 @@ function App() {
           achievements.length) > 0 && (
           <section id="journey" className="section">
             <div className="section-label">04 — JOURNEY</div>
+
             <div className="timeline">
               {[
                 ...experience.map((x) => ({ ...x, type: "Experience" })),
@@ -164,12 +165,39 @@ function App() {
               ].map((x, i) => (
                 <div className="timeline-item" key={i}>
                   <span>{x.type}</span>
+
                   <h3>{x.title || x.name}</h3>
-                  <p>{x.company || x.institution || x.description || ""}</p>
+
+                  <p>
+                    {x.company ||
+                      x.institution ||
+                      (x.type === "Certification" ? x.issuer : "") ||
+                      (x.type === "Achievement" ? x.eventName : "") ||
+                      ""}
+                  </p>
+
                   <small>
-                    {x.startDate || x.date || ""}{" "}
-                    {x.endDate ? "— " + x.endDate : ""}
+                    {x.startDate || x.date || ""}
+                    {x.endDate ? " — " + x.endDate : ""}
                   </small>
+
+                  {x.type === "Certification" && (
+                    <>
+                      {x.duration && <p>Duration: {x.duration}</p>}
+
+                      {x.description && <p>{x.description}</p>}
+
+                      {x.credentialUrl && (
+                        <a
+                          href={x.credentialUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          View Credential
+                        </a>
+                      )}
+                    </>
+                  )}
                 </div>
               ))}
             </div>
