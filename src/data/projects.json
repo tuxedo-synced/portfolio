@@ -1,7 +1,7 @@
 [
   {
     "title": "Spring Security Authentication System",
-    "image": "/projects/security.svg",
+    "image": "dist/assets/thumbnail/security-auth.png",
     "intro": "A Spring Boot web application implementing user authentication and secure backend APIs.",
     "description": "Built a Spring Boot application with Spring Security, JWT-based authentication, JPA persistence, Oracle Database integration, and MVC-based web functionality. Includes user authentication, password encryption, and secure API access.",
     "technologies": [
@@ -20,7 +20,7 @@
   },
   {
     "title": "Employee Management System",
-    "image": "/projects/employee-crud.svg",
+    "image": "dist/assets/thumbnail/employee-crud.png",
     "intro": "A Java web application for managing employee records using Spring MVC and JDBC.",
     "description": "Developed a complete employee management system with user registration and login, employee CRUD operations, Oracle Database integration, Spring JdbcTemplate, and JSP-based views.",
     "technologies": [

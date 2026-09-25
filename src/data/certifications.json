@@ -1,9 +1,39 @@
 [
   {
-    "name": "Web Development and Design Internship",
-    "issuer": "Oasis Infobyte",
-    "date": "2026",
-    "description": "Certificate of Completion for successfully completing the Web Development and Design internship.",
-    "credentialUrl": "https://oasisinfobyte.com/validation/validated.html"
+    "title": "Spring Security Authentication System",
+    "image": "/projects/security-auth.png",
+    "intro": "A Spring Boot web application implementing user authentication and secure backend APIs.",
+    "description": "Built a Spring Boot application with Spring Security, JWT-based authentication, JPA persistence, Oracle Database integration, and MVC-based web functionality. Includes user authentication, password encryption, and secure API access.",
+    "technologies": [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "Spring MVC",
+      "JPA / Hibernate",
+      "JWT",
+      "Oracle",
+      "Lombok",
+      "ModelMapper"
+    ],
+    "github": "https://github.com/tuxedo-synced/security",
+    "live": null
+  },
+  {
+    "title": "Employee Management System",
+    "image": "/projects/employee-crud.png",
+    "intro": "A Java web application for managing employee records using Spring MVC and JDBC.",
+    "description": "Developed a complete employee management system with user registration and login, employee CRUD operations, Oracle Database integration, Spring JdbcTemplate, and JSP-based views.",
+    "technologies": [
+      "Java",
+      "Spring MVC",
+      "Spring JDBC",
+      "JdbcTemplate",
+      "Oracle",
+      "JSP",
+      "JSTL",
+      "Maven"
+    ],
+    "github": "https://github.com/tuxedo-synced/emploee-crud",
+    "live": null
   }
 ]
