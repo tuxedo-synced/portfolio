@@ -1,3 +1,39 @@
 [
-  {"title":"Add Your First Project","image":"/projects/project-placeholder.svg","intro":"Your project summary goes here.","description":"Replace this object with your real project details. The showcase layout will automatically alternate as you add projects.","technologies":["Add technology"],"github":null,"live":null}
+  {
+    "title": "Spring Security Authentication System",
+    "image": "/projects/security.svg",
+    "intro": "A Spring Boot web application implementing user authentication and secure backend APIs.",
+    "description": "Built a Spring Boot application with Spring Security, JWT-based authentication, JPA persistence, Oracle Database integration, and MVC-based web functionality. Includes user authentication, password encryption, and secure API access.",
+    "technologies": [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "Spring MVC",
+      "JPA / Hibernate",
+      "JWT",
+      "Oracle",
+      "Lombok",
+      "ModelMapper"
+    ],
+    "github": "https://github.com/tuxedo-synced/security",
+    "live": null
+  },
+  {
+    "title": "Employee Management System",
+    "image": "/projects/employee-crud.svg",
+    "intro": "A Java web application for managing employee records using Spring MVC and JDBC.",
+    "description": "Developed a complete employee management system with user registration and login, employee CRUD operations, Oracle Database integration, Spring JdbcTemplate, and JSP-based views.",
+    "technologies": [
+      "Java",
+      "Spring MVC",
+      "Spring JDBC",
+      "JdbcTemplate",
+      "Oracle",
+      "JSP",
+      "JSTL",
+      "Maven"
+    ],
+    "github": "https://github.com/tuxedo-synced/emploee-crud",
+    "live": null
+  }
 ]

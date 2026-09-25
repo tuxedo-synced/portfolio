@@ -1,5 +1,12 @@
 [
-  {"name":"Add your skills","category":"Backend","level":""},
-  {"name":"Add your skills","category":"Frontend","level":""},
-  {"name":"Add your skills","category":"Database","level":""}
+  {"name":"Java Core","category":"Backend","level":"Advanced"},
+  {"name":"Spring Boot","category":"Backend","level":"Advanced"},
+  {"name":"Spring MVC","category":"Backend","level":"Intermediate"},
+  {"name":"Spring Security","category":"Backend","level":"Basic"},
+  {"name":"Spring Core","category":"Backend","level":"Intermediate"},
+  {"name":"JDBC","category":"Backend","level":"Intermediate"},
+  {"name":"Spring JDBC","category":"Backend","level":"Intermediate"},
+  {"name":"JPA / Hibernate","category":"Backend","level":"Intermediate"},
+  {"name":"HTML / CSS / JavaScript","category":"Frontend","level":"Basic"},
+  {"name":"Oracle SQL","category":"Database","level":"Intermediate"}
 ]

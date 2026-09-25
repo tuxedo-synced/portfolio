@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "institution": "Anil Neerukonda Institute Of Technology & Sciences",
+    "degree": "Bachelor of Technology",
+    "field": "Computer Science and Engineering (Data Science)",
+    "startDate": "Jul 2024",
+    "endDate": "Mar 2028",
+    "grade": "9.14/10 CGPA",
+    "description": "B.Tech in Computer Science and Engineering with specialization in Data Science."
+  },
+  {
+    "institution": "Sri Chaitanya College of Education",
+    "degree": "Intermediate",
+    "field": "Engineering Science",
+    "startDate": "May 2022",
+    "endDate": "Mar 2024",
+    "grade": "91.7%",
+    "description": "Completed Intermediate education with Engineering Science."
+  },
+  {
+    "institution": "Sri Chaitanya College of Education",
+    "degree": "Secondary School Certificate",
+    "field": "General Studies",
+    "startDate": "Jun 2021",
+    "endDate": "Apr 2022",
+    "grade": "93.83%",
+    "description": "Completed secondary school education."
+  }
+]
