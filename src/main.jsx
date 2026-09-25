@@ -24,7 +24,12 @@ function Project({project,index}) {
   </div>;
   return <article className={'project '+(index%2?'reverse':'')}>
     <button className={'project-image '+(open?'open':'')} onClick={()=>setOpen(!open)} aria-label="Show project description">
-      <img src={project.image} alt={project.title}/>
+      <img
+  src={project.image}
+  alt={project.title}
+  onLoad={() => console.log("IMAGE LOADED:", project.image)}
+  onError={() => console.log("IMAGE FAILED:", project.image)}
+/>
       <div className="project-overlay"><p>{project.description}</p><span>{open?'Tap to close':'Hover / tap for details'}</span></div>
     </button>
     {content}
