@@ -105,7 +105,11 @@ function App() {
           </div>
           <div className="portrait-wrap">
             <div className="portrait-frame">
-              <div className="portrait-placeholder">SR</div>
+              <img
+                src={profile.image}
+                alt={profile.name}
+                className="portrait-image"
+              />
             </div>
             <span className="portrait-note">
               BUILDING FROM
